@@ -23,7 +23,7 @@ public class Run {
 		
 		D_Cast d  = new D_Cast();
 
-		d.autoCasting();
-	
+		//d.autoCasting();
+		d.forceCasting();
 	}
 }
