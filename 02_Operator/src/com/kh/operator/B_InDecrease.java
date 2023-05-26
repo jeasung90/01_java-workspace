@@ -58,14 +58,33 @@ public class B_InDecrease {
 		System.out.println("num--은 ? : "+ num--);// num = 21 (20)
 		System.out.println("최종num은 ? : "+ num);
 		
-		
-		
-		
-		
-		
 	}
 	
-	
-	
+	public void method3(){
+		int num1 = 20;			// 21
+		int result = ++num1 * 3; // 21*3 =63
+		System.out.println(num1);
+		System.out.println(result);
+		System.out.printf("num1 : %d, result : %d\n",num1,result);
+		
+		int num2 = 20; //21
+		int result2 = num2++ *3; // 60
+		System.out.printf("num2 : %d, result2 : %d\n",num2,result2);
+
+	}
+
+	public void method4(){
+		int a =10;
+		int b =20;
+		int c =30;
+		
+		System.out.println(a++); // a=10 (11) 
+		System.out.println((++a)+(b++) ); //a=12 b=20(21) =>32
+		System.out.println((a++)+(--b)+(--c) ); //a=13, b=20, c=29 == 61
+		
+		System.out.printf("a: %d, b : %d, c: %d\n",a,b,c);
+		
+	}
+
 	
 }
