@@ -117,7 +117,8 @@ public class B_KeybordInput {
 		
 	
 		System.out.print(name + "님은 " + age + "살이며 " + height + "에" + wt + "입니다. 사는곳은 " + address + "입니다."  );
-
+		System.out.println();
+		System.out.printf("%s님은 %d살이며 %.1f에 %.1f입니다. 사는곳은 %s입니다.",name,age,height,wt,address);
 		
 		
 	}

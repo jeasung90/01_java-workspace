@@ -1,4 +1,4 @@
-/*
+
 package com.kh.practice01.run;
 
 import com.kh.practice01.func.VariablePractice1;
