@@ -123,11 +123,11 @@ public class OperatorPractice {
 		System.out.print("b사원의 연봉 : ");
 		int b = sc.nextInt();
 		System.out.print("c사원의 연봉 : ");
-		int c = sc.nextInt();
-		int c2 = c;
-		double a1 = a2+(a2*=0.4);
+		double c = sc.nextInt();
+		double c2 = c;
+		double a1 = a*1.4;
 		double b1 = b;
-		double c1 = c2+(c2*=0.15);
+		double c1 = (c*1.15);
 		
 		System.out.printf("A사원의 연봉/연봉+a : %d/%.1f",a,a1);
 		System.out.println((a1>=3000)?" 3000 이상":" 3000 미만");
@@ -136,9 +136,10 @@ public class OperatorPractice {
 		System.out.printf("b사원의 연봉/연봉+a : %d/%.1f",b,b1);
 		System.out.println((b>=3000)?" 3000 이상":" 3000 미만");
 		
-		System.out.printf("c사원의 연봉/연봉+a : %d/%.1f",c,c1);
+		System.out.printf("c사원의 연봉/연봉+a : %.0f/%.15f",c,c1);
 		System.out.println((c1>=3000)?" 3000 이상":" 3000 미만");
 		
+		System.out.println(c1);
 		
 	}
 }
