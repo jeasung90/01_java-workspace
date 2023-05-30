@@ -7,7 +7,7 @@ public class LoopRun {
 	public static void main(String[] args) {
 
 		A_for a = new A_for();
-		a.method15();
+		a.method17();
 		
 	}
 

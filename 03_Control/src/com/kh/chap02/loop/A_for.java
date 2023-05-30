@@ -268,7 +268,8 @@ public class A_for {
 	}
 	public void method15() {
 		// ****
-		
+		// 행은 1~4 까지 반복 => 바깥쪽 for문
+		// 매 행 고정일때 열은 1~4까지 반복 => 안쪽 for 문
 		for(int j=1;j<=4;j++) {
 			
 			for(int i =1;i<=4;i++) {
@@ -277,13 +278,39 @@ public class A_for {
 		}
 		System.out.println();
 		}
-		
-		
-		
-		
 	}
-	
-	
+	public void method16() {
+		// 1*** => 1행 1열일떄 
+		// *2** => 2행 2열일때
+		// **3* => 3행 3열일때
+		// ***4 => 4행 4열일때
+		
+		for(int j=1;j<=4;j++) {        // 행을 담당
+			
+			for(int i=1;i<=4;i++) {    // 열을 담당
+				if(j==i) {             // 행과 열이 일치할 떄
+					System.out.print(i);
+				}else {
+				System.out.print("*");
+				}
+		}
+			System.out.println();
+		}
+	}
+	public void method17() {
+		// 2단부터 9단까지 출력
+		// 한단을 나오게 한 후 
+		// 
+		
+		for(int j=2;j<=9;j++) {
+			for(int i=1;i<=9;i++) {
+				System.out.printf(" %d X %d = %d\n",j,i,j*i);
+			
+			
+		}
+			System.out.println();
+		}
+	}
 	
 	
 	
