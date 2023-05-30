@@ -172,29 +172,31 @@ public class controlpractice {
 	public void practice8() {
 		Scanner sc = new Scanner(System.in);
 		System.out.print("피연산자1 입력 :");
-		int a = sc.nextInt();
+		double a = sc.nextDouble();
 		System.out.print("피연산자2 입력 :");
-		int b = sc.nextInt();
+		double b = sc.nextDouble();
 		sc.nextLine();
 		System.out.print("연산자를 입력(+,-,*,/,%)  :");
 		String c = sc.nextLine();
-		
+		int a2 = (int) a;
+		int b2 = (int) b;
+
 		if(a>=1 && b>=1) {
 			switch(c) {
 			case "+" :
-				System.out.println(a+b);
+				System.out.printf("%d + %d = %f",a2,b2,(a+b));
 				break;
 			case "-" :
-				System.out.println(a-b);
+				System.out.printf("%d - %d = %f",a2,b2,(a-b));
 				break;
 			case "*" :
-				System.out.println(a*b);
+				System.out.printf("%d * %d = %f",a2,b2,(a*b));
 				break;
 			case "/" :
-				System.out.println(a/b);
+				System.out.printf("%d / %d = %f",a2,b2,(a/b));
 				break;
 			case "%" :
-				System.out.println(a%b);
+				System.out.printf("%d % %d = %f",a2,b2,(a%b));
 				break;
 			}
 			
@@ -217,21 +219,26 @@ public class controlpractice {
 		System.out.print("출석 회수 : ");
 		double d = sc.nextDouble();
 		double sum = (a*0.2)+(b*0.3)+(c*0.3)+(d); // 출석점수
-		
-		System.out.println("중간 고사 점수(20) : "+(a*0.2));
-		System.out.println("기말 고사 점수(30) : "+(b*0.3));
-		System.out.println("과제 점수(30) : "+(c*0.3));
-		System.out.println("출석 회수(20) : "+ d);
-		System.out.println("총점 : "+sum);
+		System.out.println("======== 결과 =========");
 		
 		if(sum >=70) {
 			if(d>=14) {
+				System.out.println("중간 고사 점수(20) : "+(a*0.2));
+				System.out.println("기말 고사 점수(30) : "+(b*0.3));
+				System.out.println("과제 점수(30) : "+(c*0.3));
+				System.out.println("출석 회수(20) : "+ d);
+				System.out.println("총점 : "+sum);
 				System.out.println("pass");
 			}else {
 				System.out.printf("fail [출석 회수 부족 (%.0f/20)}",c);
 			}
 			
 		}else if(d>14) {
+			System.out.println("중간 고사 점수(20) : "+(a*0.2));
+			System.out.println("기말 고사 점수(30) : "+(b*0.3));
+			System.out.println("과제 점수(30) : "+(c*0.3));
+			System.out.println("출석 회수(20) : "+ d);
+			System.out.println("총점 : "+sum);
 			System.out.println("fail [점수 미달]");
 		
 	}else {
