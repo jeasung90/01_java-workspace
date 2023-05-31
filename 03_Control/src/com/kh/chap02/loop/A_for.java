@@ -114,20 +114,24 @@ public class A_for {
 		// 사용자에게 값을 입력받아 1부터 입력받은 수까지의 합계 출력
 		
 		Scanner sc = new Scanner(System.in);
-		System.out.print("1이상의 정수 : ");
-		int num = sc.nextInt();
-		
-		if( num >0) {
-			// 누적합
-			//1. sum 변수 만들기
-			//2. for문 돌리기
-			int sum = 0;
-			for(int i = 1;i<=num;i++) {
-				sum+=i;
+		while(true) {    // true시 무한으로 돌아감
+			
+			System.out.print("1이상의 정수 : ");
+			int num = sc.nextInt();
+			
+			if( num >0) {
+				// 누적합
+				//1. sum 변수 만들기
+				//2. for문 돌리기
+				int sum = 0;
+				for(int i = 1;i<=num;i++) {
+					sum+=i;
+				}
+				System.out.println("1부터 입력하신 "+num+"까지의 합은 : "+sum);
+				break;
+			}else {
+				System.out.println("잘못입력했습니다.");
 			}
-			System.out.println("1부터 입력하신 "+num+"까지의 합은 : "+sum);
-		}else {
-			System.out.println("잘못입력했습니다.");
 		}
 		
 		
@@ -151,7 +155,7 @@ public class A_for {
 		//			  1.0 ~ 11.0 	1.0 ~ 10.99999
 		
 		int random = (int) (Math.random() *10+1);
-		//			  1 ~ 11		1 ~ 10
+		//			          1 ~ 11		1 ~ 10
 		System.out.println("1~10 사이의 랜덤값 : "+ random);
 		
 		// 누적합 구하는 방법
@@ -204,8 +208,8 @@ public class A_for {
 		// 추출하고자 하는 인덱스값이 (문자열의 길이 -1) 까지 매번 1씩 증가
 		System.out.println("문자열의 길이 : "+ str.length());
 		
-		for(int i=0; i<str.length(); i++) {
-			System.out.println(str.charAt(i)); //문제있음
+		for(int i=0; i<str.length(); i++) {  //.length()는 문자열의 길이를 알고자 할때 사용
+			System.out.println(str.charAt(i)); 
 		
 		}	
 	}
