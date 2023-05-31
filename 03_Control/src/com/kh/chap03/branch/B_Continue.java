@@ -10,7 +10,7 @@ public class B_Continue {
 	public void method1() {
 
 		// 직접
-		// for문으로 1붙터 10까지 홀수 출력
+		// for문으로 1부터 10까지 홀수 출력
 		// 1 3 5 6 7 9
 
 		/*
@@ -58,7 +58,7 @@ public class B_Continue {
 			System.out.println();
 			
 		}
-		
-		
+	
+
 	}
 }
