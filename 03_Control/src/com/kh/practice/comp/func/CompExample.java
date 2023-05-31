@@ -71,12 +71,35 @@ public class CompExample {
 		System.out.println(a+" 안에 포함된 "+b+"개수 : "+sum);
 	}
 	
-	
-	
-	
-	
-	
-	
-	
-	
+	public static void practice4() {
+		
+		Scanner sc = new Scanner(System.in);
+
+		System.out.print("문자열 : ");
+		String a = sc.nextLine();
+		
+		System.out.print("문자 : ");
+		char b = sc.nextLine().charAt(0);
+		int sum =0;
+		
+		for(int i=0;i< a.length();i++) {
+			if(a.charAt(i)==b) {
+				sum++;
+			}
+			
+		
+		}
+		System.out.println(a+" 안에 포함된 "+b+"개수 : "+sum);
+		
+		while(true) {
+			System.out.print("더해?");
+			char yn = sc.next().charAt(0);
+			
+			if(yn=='y'||yn=='Y') {
+				break;
+			}else if(yn=='n'||yn=='N') {
+				System.out.println("bye");
+			}
+		}
+	}	
 }
