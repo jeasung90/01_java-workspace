@@ -154,20 +154,29 @@ public class CompExample {
 			
 			
 			int aa = 0 ;
+				
 			int win=0;
 			int lose=0;
 			int same=0;
 			int all=0;
 			
+			if(a.equals("exit")){
+				System.out.println((win+lose+same)+"전 "+win+"승 "+same+"무 "+lose+"패");
+				break;
+			}
+				
 			 switch(bRandom) {
 			 case 1 : 
 				 b = "가위";
+				break;
 			 
 			 case 2 : 
 				 b = "바위";
+				 break;
 				 
 			 case 3 : 
 				 b = "보";
+				 break;
 				 
 			 }
 			
@@ -200,24 +209,47 @@ public class CompExample {
 					 System.out.println(aa);
 				}
 				*/
-				
 				if(aa == bRandom) {
-					System.out.println(name+" : "+a+" "+aa);
-					System.out.println("컴퓨터 : " + b+""+bRandom);
+					System.out.println(name+" : "+a+" ");
+					System.out.println("컴퓨터 : " + b+"");
 					System.out.println("비김");
 					same++;
 				
-				}else if(aa > bRandom) {
-					System.out.println(name+" : "+a+" "+aa);
-					System.out.println("컴퓨터 : " + b+""+bRandom);
-					System.out.println("이김");
+				}else if((a.equals("가위")) == (b.equals("바위"))) {
+					System.out.println(name+" : "+a+" ");
+					System.out.println("컴퓨터 : " + b+"");
+					System.out.println("짐1");
+					lose++;
+				}else if((a.equals("가위")) == (b.equals("보"))) {
+					System.out.println(name+" : "+a+" ");
+					System.out.println("컴퓨터 : " + b+"");
+					System.out.println("이김1");
+					win++;
+					
+				}else if((a.equals("바위")) == (b.equals("가위"))) {
+					System.out.println(name+" : "+a+" ");
+					System.out.println("컴퓨터 : " + b+"");
+					System.out.println("이김2");
+					win++;
+				}else if((a.equals("바위")) == (b.equals("보"))) {
+					System.out.println(name+" : "+a+" ");
+					System.out.println("컴퓨터 : " + b+"");
+					System.out.println("짐2");
+					lose++;
+				}else if((a.equals("보")) == (b.equals("가위"))) {
+					System.out.println(name+" : "+a+" ");
+					System.out.println("컴퓨터 : " + b+"");
+					System.out.println("짐3");
+					lose++;
+				}else if((a.equals("보")) == (b.equals("바위"))) {
+					System.out.println(name+" : "+a+" ");
+					System.out.println("컴퓨터 : " + b+"");
+					System.out.println("이김3");
+					win++;
 				
-				}else if(aa < bRandom) {
-					System.out.println(name+" : "+a+" "+aa);
-					System.out.println("컴퓨터 : " + b+""+bRandom);
-					System.out.println("짐");
+				}else {
+					System.out.println("오류입니다");
 				}
-				
 				
 				
 				
