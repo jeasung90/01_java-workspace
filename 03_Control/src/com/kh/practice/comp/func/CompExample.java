@@ -93,18 +93,35 @@ public class CompExample {
 		
 		System.out.println(a+" 안에 포함된 "+b+"개수 : "+sum);
 		
+		while(true) {
 			System.out.print("더해?");
-			sc.nextLine();
 			
 			char yn = sc.nextLine().charAt(0);
 			
 			if(yn=='y'||yn=='Y') {
-				sc.nextLine();
-				continue;
+				break;
+				
 			}else if(yn=='n'||yn=='N') {
 				System.out.println("bye");
-			break;
+				return;
+			}else {
+				System.out.println("잘못입력했어");
+				
 			}
+		}
+		
 		} // 무한루프 
 	}	
+	public static void practice5() {
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+	}
 }
