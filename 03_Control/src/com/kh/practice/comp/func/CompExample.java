@@ -105,7 +105,7 @@ public class CompExample {
 				System.out.println("bye");
 				return;
 			}else {
-				System.out.println("잘못입력했어");
+				System.out.println("잘못입력했어.");
 				
 			}
 		}
@@ -113,15 +113,137 @@ public class CompExample {
 		} // 무한루프 
 	}	
 	public static void practice5() {
+		Scanner sc = new Scanner(System.in);
+
+		int random = (int) (Math.random()*100+1);
+		System.out.println(random);
+		int count =0;
 		
+		while(true) {
+			System.out.print("1~100 사이의 임의의 난수를 맞춰보세요 : ");
+			int user = sc.nextInt();
+			
+			if(user<1 || user >100) {
+				System.out.println("다시");  /// 해결
+				
+			}else if(user>random){
+				System.out.println("down");			
+				count++;
+			}else if(user<random) {
+				System.out.println("up");
+				count++;
+			}else {
+				System.out.println("same");
+				System.out.println("몇번만에 "+count+1);
+			}
+		}
+	}
+	public static void practice6() {
+		Scanner sc = new Scanner(System.in);
+
 		
-		
-		
-		
-		
-		
-		
+		while(true) {
+			System.out.print("이름 : ");
+			String name = sc.nextLine();
+			
+			System.out.print("가위바위보 : ");
+			String a = sc.nextLine();
+			
+			String b = null  ;
+			int bRandom = (int) (Math.random()*3+1);
+			
+			
+			int aa = 0 ;
+			int win=0;
+			int lose=0;
+			int same=0;
+			int all=0;
+			
+			 switch(bRandom) {
+			 case 1 : 
+				 b = "가위";
+			 
+			 case 2 : 
+				 b = "바위";
+				 
+			 case 3 : 
+				 b = "보";
+				 
+			 }
+			
+			
+			if((a.equals("가위")) || (a.equals("바위")) || (a.equals("보")) ) {
+				
+				if(a.equals("가위")) {
+					aa =1;
+				}else if(a.equals("바위")){
+					aa =2;
+				}else if(a.equals("보")){
+					aa=3;
+				}
+				
+				
+				// 가위 {1>3}{1<2}
+				// 바위 {2<3}{2>1}
+				// 보   {3<1}{3>2}
+				
+				/*
+				switch(a) {
+				case "가위" :
+					aa = 1;
+					System.out.println(aa);
+				case "바위" :
+					aa = 2;
+					System.out.println(aa);
+				 case "보" : 
+					 aa = 3;
+					 System.out.println(aa);
+				}
+				*/
+				
+				if(aa == bRandom) {
+					System.out.println(name+" : "+a+" "+aa);
+					System.out.println("컴퓨터 : " + b+""+bRandom);
+					System.out.println("비김");
+					same++;
+				
+				}else if(aa > bRandom) {
+					System.out.println(name+" : "+a+" "+aa);
+					System.out.println("컴퓨터 : " + b+""+bRandom);
+					System.out.println("이김");
+				
+				}else if(aa < bRandom) {
+					System.out.println(name+" : "+a+" "+aa);
+					System.out.println("컴퓨터 : " + b+""+bRandom);
+					System.out.println("짐");
+				}
+				
+				
+				
+				
+				
+				
+				
+				
+			}else {
+				System.out.println("잘못입력하셨습니다.");
+				break;
+			}
+			
+			
+			
+			
+			
+			
+			
+			
+		}
 		
 		
 	}
+	
+	
+	
+	
+	
 }

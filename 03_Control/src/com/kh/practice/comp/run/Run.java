@@ -6,8 +6,9 @@ public class Run {
 
 	public static void main(String[] args) {
 		CompExample a = new CompExample();
-		a.practice4();
+		a.practice6();
 		
 	}
 
 }
+
