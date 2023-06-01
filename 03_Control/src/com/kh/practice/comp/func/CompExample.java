@@ -251,23 +251,10 @@ public class CompExample {
 					System.out.println("오류입니다");
 				}
 				
-				
-				
-				
-				
-				
-				
 			}else {
 				System.out.println("잘못입력하셨습니다.");
 				break;
 			}
-			
-			
-			
-			
-			
-			
-			
 			
 		}
 		
