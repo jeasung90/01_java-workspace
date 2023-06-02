@@ -141,24 +141,24 @@ public class CompExample {
 	public static void practice6() {
 		Scanner sc = new Scanner(System.in);
 
+		System.out.print("이름 : ");
+		String name = sc.nextLine();
 		
+		int aa = 0 ;
+		
+		int win=0;
+		int lose=0;
+		int same=0;
+		int all=0;
 		while(true) {
-			System.out.print("이름 : ");
-			String name = sc.nextLine();
 			
 			System.out.print("가위바위보 : ");
 			String a = sc.nextLine();
 			
-			String b = null  ;
+			String b = null;
 			int bRandom = (int) (Math.random()*3+1);
 			
 			
-			int aa = 0 ;
-				
-			int win=0;
-			int lose=0;
-			int same=0;
-			int all=0;
 			
 			if(a.equals("exit")){
 				System.out.println((win+lose+same)+"전 "+win+"승 "+same+"무 "+lose+"패");
@@ -218,18 +218,18 @@ public class CompExample {
 				}else if((a.equals("가위")) == (b.equals("바위"))) {
 					System.out.println(name+" : "+a+" ");
 					System.out.println("컴퓨터 : " + b+"");
-					System.out.println("짐1");
+					System.out.println("짐");
 					lose++;
 				}else if((a.equals("가위")) == (b.equals("보"))) {
 					System.out.println(name+" : "+a+" ");
 					System.out.println("컴퓨터 : " + b+"");
-					System.out.println("이김1");
+					System.out.println("이김");
 					win++;
 					
 				}else if((a.equals("바위")) == (b.equals("가위"))) {
 					System.out.println(name+" : "+a+" ");
 					System.out.println("컴퓨터 : " + b+"");
-					System.out.println("이김2");
+					System.out.println("이김");
 					win++;
 				}else if((a.equals("바위")) == (b.equals("보"))) {
 					System.out.println(name+" : "+a+" ");
