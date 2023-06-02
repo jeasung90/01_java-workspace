@@ -242,27 +242,22 @@ public class ArrayPractice {
 	public void practice13() {
 		
 		int[] arr = new int[10]; // 실제 랜덤값 선언
-		
-		
-			
 			for(int i=0;i<arr.length; i++) { // 10번 도는것
 				arr[i] = (int) (Math.random()*10+1);
 				for(int j=0;j<i;j++) { // 9번 도는것
 					
 					if(arr[i]==arr[j]) {
-						
 						i--;
 					}
-					
-					
 				}
-		
 			}
 			for(int i = 0; i<=9 ; i++ ) {
 				System.out.print(arr[i]+" ");
 			}
 	}
-	
+	public void practice14() {
+		
+	}
 	
 	
 	
