@@ -149,6 +149,51 @@ public class ArrayPractice {
 			} // if 2 done
 		} // while
 	}
+	public void practice8_1() {
+		Scanner sc = new Scanner(System.in);
+		
+		while(true) { // 무한반복
+			
+			System.out.print("정수 : ");
+			int num = sc.nextInt();
+			
+			if(num>2 && num%2==1) { // num이 3이상 홀수일때만 작동
+				int[] arr = new int[num];
+				
+				int value=1;
+				for(int i=0;i<arr.length;i++) { // 값대입
+					arr[i] = value;
+					if(i<arr.length / 2 ) {
+						value++;
+					}else {
+						value--;
+					}
+				}
+				
+				for(int i=0;i<arr.length;i++) {
+					System.out.print(arr[i]+" ");
+				}
+				break;
+			}else {
+				System.out.print("다시입력하세요.");
+			}
+			
+			
+			
+			
+			
+			
+			
+			
+		}
+		
+		
+		
+		
+		
+		
+		
+	}
 
 	public void practice9() {
 		Scanner sc = new Scanner(System.in);
@@ -253,6 +298,27 @@ public class ArrayPractice {
 			System.out.print(arr[i] + " ");
 		}
 	}
+	public void practice13_1() {
+		// 탐객 = for문!!!!
+		
+		int[] arr = new int[10];
+		
+		for(int i=0; i<arr.length;i++) {
+			arr[i] = (int) (Math.random() * 10 + 1);
+			for (int j = 0; j < i; j++) {
+				if (arr[i] == arr[j]) {
+					// 중복제거 랜덤한 수를 다시 만드는 코드
+					i--;
+				}
+				
+			}
+			
+		}
+		for(int i=0; i<arr.length;i++) {
+			System.out.print(arr[i]+" ");
+		}
+		
+	}
 
 	public void practice14() {
 		int[] arr = new int[6]; // 실제 랜덤값 선언 0~5
@@ -285,11 +351,28 @@ public class ArrayPractice {
 		String str = sc.nextLine();
 
 		char[] arr = new char[str.length()];
-		int num = 0;
+		int num = 0; // 문자 개수를 출력
 
+		System.out.print("문자열에 있는 문자 : ");
 		for (int i = 0; i < str.length(); i++) {
 			arr[i] = str.charAt(i);
-			System.out.print(arr[i] + ", ");
+			
+			boolean flag = true;
+			
+			for(int j=0;j<i;j++) {
+				if(arr[j] == arr[i]) {
+					flag = false;
+				}
+			}
+			if(flag/*flag == true*/) { // 중복일때는 그냥 출력 안함
+				if(i == 0) {
+					System.out.print(arr[i]);
+				}else {
+					System.out.print(", "+arr[i]);
+				}
+               
+			}
+			
 			num++;
 
 		}
@@ -349,5 +432,72 @@ public class ArrayPractice {
 	                break;
 	            }
 	        }
+	    }
+	    public static void practice16_1() {
+	    	Scanner sc = new Scanner(System.in);
+	    	
+	    	System.out.print("배열의 크기를 입력하세요 : ");
+	    	int num = sc.nextInt();
+	    	sc.nextLine();
+	    	
+	    	String[] origin = new String[num];
+	    	String[] copy = null;
+	    	
+	    	for(int i=0; i<origin.length;i++) {
+	    		System.out.printf("%d번째 문자열 : ",i+1);
+	    		origin[i]= sc.nextLine();
+	    	}
+	    		while(true) {
+	    			System.out.print("더 값을 입력하시겠습니까?(y/n) :");
+	    			char ch = sc.nextLine().charAt(0);
+	    			
+	    			if(ch=='y'|| ch=='Y') { // 더 입력하는 경우
+	    				System.out.print("더 입력하고 싶은 개수 : ");
+	    				num = sc.nextInt();
+	    				sc.nextLine();
+	    				
+	    				copy = Arrays.copyOf(origin, origin.length+num);
+	    				
+	    				for(int i=origin.length; i<copy.length;i++) {
+	    					System.out.printf("%d번째 문자열 : ",i+1);
+	    					copy[i]=sc.nextLine();
+	    				}
+	    				origin = copy;
+	    				
+	    			}else { // 그만입력하는 경우
+	    				System.out.print("[");
+	    				for(int i=0;i<copy.length;i++) {
+	    					if(i==copy.length-1) {// 마지막 인덱스인경우
+	    						System.out.printf("%s",copy[i]);
+	    					}else {
+	    						System.out.printf("%s, ",copy[i]);
+	    					}
+	    				}
+	    				System.out.println("]");
+	    				break;
+	    			}
+	    			
+	    			
+	    			
+	    			
+	    			
+	    			
+	    			
+	    			
+	    			
+	    			
+	    		}
+	    		
+	    		
+	    		
+	    		
+	    	
+	    	
+	    	
+	    	
+	    	
+	    	
+	    	
+	    	
 	    }
 }
