@@ -43,6 +43,7 @@ public class FieldRun {
 		 */
 		
 		System.out.println(Math.PI);
+		System.out.println(Math.random()); // static : 기울임
 		
 		
 		
