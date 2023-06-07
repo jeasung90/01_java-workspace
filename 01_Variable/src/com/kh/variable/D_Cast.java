@@ -137,10 +137,10 @@ public class D_Cast {
 		System.out.println(iSum3);
 		
 		// ** 데이터 손실 테스트 ** ★★★★★★★★
+	//	byte bNum2 = iNum2;
 		int iNum2 =290;
 		//byte bNum2=(byte) iNum2; //byte는 -128~127까지면 표시할 수 있음.
-		System.out.println(bNum2);
-		byte bNum2=iNum2;
+	//	System.out.println(bNum2);
 		
 		
 	}

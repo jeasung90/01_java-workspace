@@ -37,13 +37,13 @@ public class Student { // 나만의 자료형
 	*/	
 		
 	
-	public void setNmae(String name) { // 관례적인 표현
+	//public void setNmae(String name) { // 관례적인 표현
 		// name = name; 색이 없음... 매개변수name = 매개변수 name; 형식
 					// 필드명과 매개변수명이 동일한 시점에서는 해당 메소드 영역에서 만들어진 변수가 우선순위가 높음
 		//필드 name = 매개변수 name; 원함
-		this.name = name;
+		//this.name = name;
 		
-	}
+	//}
 	
 	// setter 
 	public void setName(String name) {
