@@ -1,6 +1,6 @@
 package com.kh.chap06_method.run;
 
-import com.kh.chap06_method.controller.StaticMethod;
+import com.kh.chap06_method.controller.OverLoadingTest;
 
 public class MethodRun {
 
@@ -35,7 +35,7 @@ public class MethodRun {
 		 * n.method4(str, index)); }else { System.out.println("인덱스 값이 부적적합니다."); }
 		 */
 		
-		
+		/*
 		// --------- StaticMethod -----------
 		// 생성 없이 바로 호출 가능
 		//Math.random();
@@ -44,7 +44,24 @@ public class MethodRun {
 		System.out.println(StaticMethod.method2()); // return 값은 출력하지 않으면 보이지 않음
 		StaticMethod.method3("삼겹살");
 		//StaticMethod.method4("apple","kiwi");
-		System.out.println(StaticMethod.method4("apple","kiwi"));
+		System.out.println(StaticMethod.method4("apple","kiwi")); // return 출력해야만 확인 가능
+		*/
+		
+		
+		// --------- OverLoadingTest -----------
+		
+		OverLoadingTest ot = new OverLoadingTest();
+		ot.test();
+		ot.test(10);
+		ot.test(25,"ㅋㄱㅋㄱ");
+		ot.test("바보", 50);
+		ot.test(10, 10);
+		ot.test("차돌박이");
+		
+		// 오버로딩의 대표적인 예 => print()
+		System.out.print(10);
+		System.out.print("ㄴㄴ");
+		System.out.print(0.0);
 		
 	}
 
