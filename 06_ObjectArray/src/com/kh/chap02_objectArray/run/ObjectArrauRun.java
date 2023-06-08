@@ -55,6 +55,7 @@ public class ObjectArrauRun {
 			if(phones[i].getName().equals(phoneName)) {
 				System.out.println("당신이 구매하고자 하는 휴대폰의 가격은 : "+phones[i].getPrice()+"만원 입니다.");
 			sc.close();
+			
 			}
 		}
 		System.out.println("선생님은 다 지켜보고 계신단 말이다.");
