@@ -85,11 +85,19 @@ public class ObjectRun {
 		System.out.println(bk3.information());
 		
 		
+		// 도서 제목으로 검색하는 서비스
+		System.out.print("검색할 책 제목 : ");
+		String search = sc.nextLine();
 		
-		
-		
-		
-		
+		if(bk1.getTitle().equals(search)) {
+		System.out.println(bk1.information());
+		}
+		if(bk2.getTitle().equals(search)) {
+		System.out.println(bk2.information());
+		}
+		if(bk3.getTitle().equals(search)) {
+		System.out.println(bk3.information());
+		}
 		
 		
 		
