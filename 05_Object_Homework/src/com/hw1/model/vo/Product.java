@@ -2,12 +2,17 @@ package com.hw1.model.vo;
 
 public class Product {
 
+	// 필드부
 	private String productld;
 	private String productName;
 	private String productArea;
 	private int price;
 	private double tex;
 	
+	// 기본 생성자 // 전체 생성자가 있으면 기본 생성자를 안만들어줘서 직접 만들어야함!!
+	public Product() {}
+	
+	// 전체 생성자 (매개변수 생성자)
 	public Product(String productld,String productName,String productArea,int price,double tex) {
 	this.productld = productld;
 	this.productName = productName;
@@ -16,6 +21,8 @@ public class Product {
 	this.tex = tex;
 	}
 	
+	
+	// get - set 한세트로 작성 
 	public String getProductld() {
 		return productld;
 	}

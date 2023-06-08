@@ -44,6 +44,8 @@ public class Product {
 	 * 
 	 */
 	
+	// 전체 생성자
+	
 	public void setpName(String pName) {
 		this.pName=pName;
 	}
