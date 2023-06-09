@@ -24,9 +24,9 @@ public class Run {
 		System.out.println("emp[1] : "+emp[1].information());
 		System.out.println("===================================================");
 		
-		System.out.println(emp[0].information2());
-		System.out.println(emp[1].information2());
-		System.out.println(emp[2].information2());
+		System.out.println(emp[0].information2());
+		System.out.println(emp[1].information2());
+		System.out.println(emp[2].information2());
 		System.out.println("===================================================");
 		
 		for(int i=0;i<emp.length;i++) {
