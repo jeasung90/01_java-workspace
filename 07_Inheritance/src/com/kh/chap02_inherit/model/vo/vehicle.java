@@ -35,6 +35,10 @@ public class vehicle {
 	public String information() {
 		return "naem : "+name+", mileage : "+mileage+", kind : "+kind;
 	}
+	@Override
+	public String toString() {
+		return "naem : "+name+", mileage : "+mileage+", kind : "+kind;
+	}
 	
 	public void howtomove() {
 		System.out.println("굴러간다.");
