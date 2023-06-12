@@ -1,14 +1,15 @@
 package com.kh.chap01_poly.part02_electronic.model.vo;
 
-public class Electrinic {
+public class Electronic {
 
+	public static final String CPU="intel";
 	private String brand;
 	private String name;
 	private int price;
 	
-	public Electrinic() {}
+	public Electronic() {}
 	
-	public Electrinic(String brand,String name,int price) {
+	public Electronic(String brand,String name,int price) {
 		this.brand=brand;
 		this.name=name;
 		this.price=price;

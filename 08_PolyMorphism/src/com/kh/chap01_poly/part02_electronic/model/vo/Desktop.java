@@ -1,13 +1,13 @@
 package com.kh.chap01_poly.part02_electronic.model.vo;
 
-public class Desktop extends Electrinic{
+public class Desktop extends Electronic{
 
 	public static final String CPU = "intel";
 	private String graphic;
 	
 	public Desktop () {}
 	
-	public Desktop (String brand,String name,int price,String CPU, String graphic) {
+	public Desktop (String brand,String name,int price, String graphic) {
 		super(brand, name, price);
 		this.graphic=graphic;
 	}
