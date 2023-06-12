@@ -29,6 +29,7 @@ public class Student extends Person {
 		this.major=major;
 	}
 	
+	@Override
 	public String toString() {
 		return super.toString()+", grade : "+grade+", major : "+major;
 	}
