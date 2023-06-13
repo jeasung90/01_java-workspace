@@ -65,9 +65,12 @@ public class A_StringPoolTest {
 		// 변경이 가능하긴 하나 그 자리에서 수정되는 개념 아님
 		
 		str3="bye";
+		System.out.println(System.identityHashCode(str3));
+		// 변경을 하는 순간 기존의 문자열 다리에서 변경되는게 아닌
+		// 새로운 곳을 참조하도록 됨 (새로운 주소값 부여받음 == 주소값 변경)
 		
-		
-		
+		str3="hello";
+		System.out.println(System.identityHashCode(str3));
 		
 		
 		
