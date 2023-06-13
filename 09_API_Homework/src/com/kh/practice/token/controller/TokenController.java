@@ -1,10 +1,25 @@
 package com.kh.practice.token.controller;
 
+import java.util.StringTokenizer;
+
 public class TokenController {
 
 	// 띄어쓰기 없앤 문자열
 	public String afterToken(String str) {
-		return str.replace(" ", "");
+		StringTokenizer stn = new StringTokenizer(str," ");
+		System.out.println(stn);
+		
+		int count = stn.countTokens();
+		
+		
+		String str1 = "";
+		for(int i=0;i<count;i++) {
+			str1+=stn.nextToken();
+		}
+		return str1;
+		
+		
+	//	return str.replace(" ", "");
 	}
 	
 	// 첫글자만 대문자
