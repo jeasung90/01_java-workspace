@@ -14,7 +14,7 @@ public class ObjectArrauRun {
 		arr[1] = 20;
 		arr[2] = 30;
 		
-		// for loop문 => 단순한 for문
+		// for loof문 => 단순한 for문
 		for(int i=0;i<arr.length;i++) {
 			System.out.println(arr[i]);
 		}
