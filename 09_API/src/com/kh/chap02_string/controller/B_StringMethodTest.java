@@ -66,7 +66,7 @@ public class B_StringMethodTest {
 		System.out.println("str0에 !가 포함되어있습니까? : " +str0.contains("!"));
 		
 		
-		// 7. ★문자열.replace(char oldChar, char newChar) : String
+		// 7. ★ 문자열.replace(char oldChar, char newChar) : String
 		//		문자열에서 oldChar 문자들을 newChar 로 변환한 새 문자열 리턴
 		String str4 = str1.replace("l", "c");
 		System.out.println(str4);
@@ -103,6 +103,7 @@ public class B_StringMethodTest {
 		System.out.println(arr[0]);
 		
 		// 11. String.valueOf(char[] data) : String
+		// 배열을 문장으로 반
 		System.out.println(String.valueOf(arr));
 		
 		

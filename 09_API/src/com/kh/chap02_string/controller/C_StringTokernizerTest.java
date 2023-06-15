@@ -31,6 +31,7 @@ public class C_StringTokernizerTest {
 		
 		// 방법2. 분리된 문자열을 각각 토큰으로써 관리하고자 할 때
 		//			java.util.StringTokenizer 클래스 이용하는 방법
+		
 		//			StringTokenizer stn = new StringTokenizer(분리시키고자 하는 문자열, 구분자);
 		
 		StringTokenizer stn = new StringTokenizer(str,",");
