@@ -66,7 +66,7 @@ public class Book {
 	    if (publishDate != null) {
 	        SimpleDateFormat dateFormat = new SimpleDateFormat("yy년 MM월 dd일");
 	       // return dateFormat.format(publishDate);
-	        return "[title="+title+", author="+author+", publicher="+publisher+", publichDate="+dateFormat.format(publishDate)+", price="+price+"]";
+	        return "Book [title="+title+", author="+author+", publicher="+publisher+", publichDate="+dateFormat.format(publishDate)+", price="+price+"]";
 	    }
 	    
 	    return "";
