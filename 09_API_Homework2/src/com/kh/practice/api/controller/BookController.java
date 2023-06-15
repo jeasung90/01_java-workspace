@@ -57,7 +57,7 @@ public class BookController {
 	        int month = new Integer(stn.nextToken());
 	        int date = new Integer(stn.nextToken());
 	        
-	        Date newPublishDate = new Date(year, month-1, date);
+	        Date newPublishDate = new Date(year-1900, month-1, date);
 	        */
 	        
 	        
@@ -69,7 +69,7 @@ public class BookController {
 	        int month = new Integer(arr[1]);
 	        int date = new Integer(arr[2]);
 	        // 2_3) year, month, date 가지고 Date객체 생성하기
-	        Date newPublishDate = new Date(year, month-1, date);
+	        Date newPublishDate = new Date(year-1900, month-1, date);
 	        
 	        
 	        
@@ -92,7 +92,7 @@ public class BookController {
 	public void printBookPublishDate() {
 		// SimpleDateFormat  bk[5].getPublishDate() = new SimpleDateFormat("yy년 MM월 dd일");
 		//System.out.println(bk[5].getPublishDate());
-		SimpleDateFormat dateFormat = new SimpleDateFormat("yy년 MM월 dd일 출간");
+		SimpleDateFormat dateFormat = new SimpleDateFormat("yyyy년 MM월 dd일 출간");
         String formattedDate = dateFormat.format(bk[5].getPublishDate());
         System.out.println(formattedDate);
 		// 새로 입력받은 도서 (5번째 도서)의 출간일 출력
