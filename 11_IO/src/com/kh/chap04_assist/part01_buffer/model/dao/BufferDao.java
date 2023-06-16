@@ -89,16 +89,22 @@ public class BufferDao {
 			// br.read();
 			// br.readLine(); 한 문장씩 가져오게 돼있음, 반환형은 스트링!!
 			
+			/*
 			System.out.println(br.readLine());
 			System.out.println(br.readLine());
 			System.out.println(br.readLine());
-			System.out.println(br.readLine());
+			// System.out.println(br.readLine()); // 파일의 끝을 만나면 null 이 나옴
+			*/
+			String value=null;
+			while((value = br.readLine())!=null) { // null과 비교할때는 equals(X)
+				System.out.println(value);
+			}
+				
 			
 			
-			
-		} catch (FileNotFoundException e) {
+		} catch (FileNotFoundException e) { // 자식 => 위에 있어야함. 없어도됨 밑에 부모 있으니
 			e.printStackTrace();
-		} catch (IOException e1) {
+		} catch (IOException e1) { // 부모
 			e1.printStackTrace();
 		}
 		
