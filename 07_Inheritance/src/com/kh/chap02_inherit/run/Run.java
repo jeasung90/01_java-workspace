@@ -1,8 +1,11 @@
 package com.kh.chap02_inherit.run;
 
+import java.util.ArrayList;
+
 import com.kh.chap02_inherit.model.vo.Airplane;
 import com.kh.chap02_inherit.model.vo.Car;
 import com.kh.chap02_inherit.model.vo.Ship;
+import com.kh.chap02_inherit.model.vo.vehicle;
 
 public class Run /*extends Object*/ {
 
@@ -21,6 +24,28 @@ public class Run /*extends Object*/ {
 		c.howtomove();
 		s.howtomove();
 		a.howtomove();
+		
+		System.out.println("===================================================");
+		
+		ArrayList<vehicle> list = new ArrayList<>();
+		
+		list.add(new Car("밴틀리", 12.5, "세단", 4));
+		list.add(new Ship("오징어잡이배", 3, "어선", 1));
+		list.add(new Airplane("농약살포기", 0.01, "농업용비행기", 10, 1));
+		
+		for(int i=0;i<list.size(); i++) {
+			System.out.println(list.get(i).information()); //동적바인딩 
+		}
+		
+		System.out.println("======================================");
+		
+		
+		
+		
+		
+		
+		
+		
 		
 		/*
 		 *  ● 상속의 장점
