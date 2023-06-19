@@ -14,16 +14,24 @@ public class DogRun {
 		ArrayList<Dog> dogList = new ArrayList<>();
 
 		// 5마리의 강쥐 이름을 입력 받아서 ArrayList에 저장한 후에
-		for (int i = 0; i < 4; i++) {
+		for (int i = 0; i < 5; i++) {
 			System.out.print((i+1)+"번째 강쥐 이름 입력 : ");
 			String dogName = sc.nextLine();
 			System.out.print("강쥐 나이 입력 : ");
 			int dogAge = sc.nextInt();
 			sc.nextLine();
-			System.out.print("강쥐 종 입력(ex.마르티스) : ");
+			System.out.print("강쥐 종 입력(ex.몰티즈) : ");
 			String dogKind = sc.nextLine();
-			dogList.add(new Dog(dogName, dogAge, dogKind));
+			
+			if(i==4) {
+				dogList.add(2, new Dog(dogName, dogAge, dogKind));
+				
+			}else {
+				dogList.add(new Dog(dogName, dogAge, dogKind));
+				
+			}
 		}
+		/*
 		System.out.print("5번째 강쥐 이름 입력 : ");
 		String dogName = sc.nextLine();
 		System.out.print("강쥐 나이 입력 : ");
@@ -31,8 +39,10 @@ public class DogRun {
 		sc.nextLine();
 		System.out.print("강쥐 종 입력(ex.마르티스) : ");
 		String dogKind = sc.nextLine();
-		dogList.add(2, new Dog(dogName, dogAge, dogKind));
+		*/
 		
+		System.out.println("==================================");
+		System.out.println("전체 강쥐 출력");
 		System.out.println("==================================");
 		for(Dog d:dogList) {
 			System.out.println(d);
