@@ -12,6 +12,7 @@ public class MusicMenu {
 	private MusicController mc = new MusicController();
 	private Scanner sc = new Scanner(System.in);
 	
+	int count =5;
 	
 	
 	/**
@@ -85,7 +86,6 @@ public class MusicMenu {
 		// 즉, controller 메소드 호출
 		
 		//mc.insertMusic(title, artist);
-		int count =5;
 		System.out.println("성공적으로 곡이 추가되었습니다.");
 		ArrayList<Music> list = mc.insertMusic(title, artist);
 		System.out.println(list.get(count++));
