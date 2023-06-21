@@ -185,6 +185,7 @@ public class LibraryRun {
 					}
 					
 				} else if (search == 4) { // 4. 출판사로 책 찾기
+					sc.nextLine();
 					System.out.print("출판사를 입력하세요 : ");
 					String publisher1 = sc.nextLine();
 					System.out.println(publisher1);
