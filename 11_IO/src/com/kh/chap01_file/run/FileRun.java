@@ -25,7 +25,7 @@ public class FileRun {
 			
 		// 2. 존재하는 폴더에 파일 생성 => 해당 경로까지 지정
 			File f2 = new File("D:\\test.txt"); // 혹여 존재하지 않는 경로 제시시 IOException!!
-			f2.createNewFile();					// ':\\'는 해당 경로안에 들어갔데는 의미
+			f2.createNewFile();					// ':\\'는 해당 경로안에 들어가겠다는 의미
 			
 		// 3. 파일을 만들 때 폴더도 같이 만들기
 			//File f3 = new File("D:\\temp\\test.txt"); // 이렇게 해도 폴더가 안생김

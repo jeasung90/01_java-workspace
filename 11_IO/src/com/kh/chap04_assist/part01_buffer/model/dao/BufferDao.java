@@ -43,7 +43,7 @@ public class BufferDao {
 			bw.newLine(); // 추가적인 메소드 활용 가능
 			bw.write("저리 가시라요!");
 			
-			// 버퍼라는 공간에 계속 쌓아놨다가 한 번에 출력해줌 => 속조 향상에 좋다.
+			// 버퍼라는 공간에 계속 쌓아놨다가 한 번에 출력해줌 => 속도 향상에 좋다.
 			
 			
 		} catch (IOException e) {
