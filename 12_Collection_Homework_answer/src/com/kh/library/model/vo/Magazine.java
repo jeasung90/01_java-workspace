@@ -7,7 +7,7 @@ public class Magazine extends Book {
 	
 	public Magazine() {}
 
-	public Magazine(String bNo, String title, String author, String publisher, int price, String description,int year, int month) {
+	public Magazine(String bNo, String title, String author, String publisher, int price, String description, int year, int month) {
 		super(bNo, title, author, publisher, price, description);
 		this.year = year;
 		this.month = month;
@@ -31,11 +31,15 @@ public class Magazine extends Book {
 
 	@Override
 	public String toString() {
-		return "Magazine [bNo="+super.getbNo()+", title="+super.getTitle()+", author="+super.getAuthor()+", publicher="+super.getPublisher()+", price="+super.getPrice()+", description="+super.getDescription()+", year=" + year + ", month=" + month + "]";
+		return "Magazine [" + super.toString() + ", year=" + year + ", month=" + month + "]";
 	}
+	
+	
+	
 
-
-	// 단축키로 생성해보기
+	
+	
+	
 	
 	
 }

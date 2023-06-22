@@ -95,17 +95,34 @@ public class BookController implements BookManager {
 
 	@Override
 	public ArrayList<Book> searchBookByPrice(int price) {
-		return null;
+		ArrayList<Book> underPri = new ArrayList<Book>();
+		for(Book b : list) {
+			if(b.getPrice()<price) {
+				underPri.add(b);
+			}
+		}
+		return underPri;
 	}
 
 	@Override
 	public int getTotalPrice() {
-		return 0;
+		int total=0;
+		for(Book b : list) {
+			total+=b.getPrice();
+		}
+		return total;
 	}
-
+	
 	@Override
 	public int getAvgPrice() {
-		return 0;
+		int total=0;
+		int AvgPrice =0;
+		for(Book b : list) {
+			total+=b.getPrice();
+		}
+		AvgPrice = total/list.size();
+		
+		return AvgPrice;
 	}
 
 }
