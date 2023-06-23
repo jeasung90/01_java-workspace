@@ -27,7 +27,7 @@ public class A_StringPoolTest {
 	System.out.println(str2.hashCode());
 	// String 클래스 hashCode 메소드 이미 오버라이딩 돼있음 (주소값이 아닌 실제 담겨있는 문자열을 가지고 해쉬코드를 만듦)
 	
-	// 근데 나는 주소값을 꼭 알고싶다.
+	// 근데 나는 주소값을 꼭 알고싶다. // 진짜 주소값을 알고 싶을 때
 	// System.identitiyHashCode(래퍼런스)
 	System.out.println(System.identityHashCode(str1));
 	System.out.println(System.identityHashCode(str2));

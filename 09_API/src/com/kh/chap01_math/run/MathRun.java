@@ -1,8 +1,8 @@
 package com.kh.chap01_math.run;
 
-public class MathRun {
+public class MathRun { // 수학관련 명령어
 
-	public static void main(String[] args) {
+	public static void main(String[] args) { 
 		
 		// java.lang.Math (String, Object) => 굳이 import 하지 않아도 사용할 수 있음!
 		

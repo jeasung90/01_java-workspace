@@ -13,7 +13,7 @@ public class C_StringTokernizerTest {
 		//			String 클레스에서 제공하는 split 메소드 이용
 		//			문자열.split(구분자) : String[]
 		
-		String[] arr = str.split(",");
+		String[] arr = str.split(","); // 구분자로 문자 분리
 		System.out.println("arr 배열의 길이 : "+ arr.length);
 		
 		/* 기존 for문

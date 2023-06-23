@@ -48,7 +48,7 @@ public class BookController implements BookManager {
 		ArrayList<Book> onlyBook = new ArrayList<Book>();
 		for (Book b : list) {
 			if (b instanceof Magazine) {
-
+				continue; // 아랫코드 굳이 실행 안하게
 			} else {
 				onlyBook.add(b);
 			}

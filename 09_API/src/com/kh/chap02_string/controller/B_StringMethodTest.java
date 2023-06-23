@@ -2,7 +2,7 @@ package com.kh.chap02_string.controller;
 
 public class B_StringMethodTest {
 
-	public void method() {
+	public void method() { // 문자열 관련 명령어 비교 등등
 		String str1 = "Hello World";
 				
 		// 메소드명(매개변수) : 반환형

@@ -10,6 +10,7 @@ import com.kh.library.model.vo.Magazine;
 public class LibraryRun {
 
 	public static void main(String[] args) {// 소장책 DB
+		
 		ArrayList<Book> bList = new ArrayList<>();
 
 		// 생성 DB
@@ -23,7 +24,9 @@ public class LibraryRun {
 		bList.add(new Book("106", "조준하의 미라클모닝", "샤이걸 성윤찡", "연우 출판사", 6300, "용석이도 2번이나 성공한 미라클모닝"));
 		bList.add(new Book("107", "민정이의 백만가지 요리레시피", "제주도에서 온 상원이", "우리반 출판사", 6300, "제주에서 밥해먹고 사는 일상"));
 
-		printBooks(bList);
+		printBooks(bList); // 프린트북스가 스테틱이 있을경우 다른곳에서 넣을 수 있음
+		LibraryRun r = new LibraryRun();
+		r.printBooks(bList); // 스테틱이 없을 경우 위와같이 선언해서 넣어줘야함
 
 	}
 
@@ -137,6 +140,7 @@ public class LibraryRun {
 					}
 				}else {
 					System.out.println("해당 도서는 이미 소장하고 있습니다.");
+					System.out.println(same);
 				}
 				
 				break;
